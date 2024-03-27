@@ -21,7 +21,7 @@ public class Task26 {
             resultString.append(num).append(" ");
         }
 
-        // Usunięcie ostatniego znaku spacji
+
         resultString.deleteCharAt(resultString.length() - 1);
 
         return resultString.toString();
