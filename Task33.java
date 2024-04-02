@@ -26,4 +26,23 @@ public class Task33 {
         if(carry != 0) res.append(carry); // we gonna add it into res until carry becomes 0;
         return res.reverse().toString(); // revese the answer we get & convt to string and return by the help of result;
     }
-}
+
+    public static void toBinary(int decimal){
+        int binary[] = new int[40];
+        int index = 0;
+        while(decimal > 0){
+            binary[index++] = decimal%2;
+            decimal = decimal/2;
+        }
+        for(int i = index-1;i >= 0;i--){
+            System.out.print(binary[i]);
+        }
+        //
+//        StringBuilder binary = new StringBuilder();
+//
+//        while (decimal > 0) {
+//            binary.insert(0, decimal % 2);
+//            decimal /= 2;
+//        }
+    }
+    }
